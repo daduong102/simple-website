@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+	<title> JavaScript Tutorial </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="JavaScript_Tutorial_CSS.css" media="screen" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</head>	
+<body>
+<div id="wrap">
+	<div id="title">
+		<h1>1 + 1 = ?</h1>
+	</div> <!--end div title-->
+	<div id="menu">
+		<ul>
+			<li><a href="#">Tuần 1</a>
+				<ul>
+					<li><a href="./Section1/JavaScript_HelloWorld.html">JavaScript Hello World</a></li>
+					<li><a href="./Section3/Calculator.html">Operators</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Tuần 2</a>
+				<ul>
+					<li><a href="./Section4/onclick.html">Switch-case</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Tuần 3</a>
+				<ul>
+					<li><a href="#">Bài 1</a></li>
+					<li><a href="#">Bài 2</a></li>
+					<li><a href="#">Bài 3</a></li>
+					<li><a href="#">Bài 4</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#">Tuần 4</a>
+				<ul>
+					<li><a href="#">Bài 1</a></li>
+					<li><a href="#">Bài 2</a></li>
+					<li><a href="#">Bài 3</a></li>
+					<li><a href="#">Bài 4</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Tuần 5</a>
+				<ul>
+					<li><a href="#">Bài 1</a></li>
+					<li><a href="#">Bài 2</a></li>
+					<li><a href="#">Bài 3</a></li>
+					<li><a href="#">Bài 4</a></li>
+				</ul>		
+			</li>
+		</ul>
+	</div> <!--end div menu-->
+	<div id="content">
+
+
+	
+		
+		<h4></h4>
+		<ul>
+			<li>Section 1: Getting started</a>
+				<ul>
+					<li><a href="./Section1/JavaScript_HelloWorld.html">JavaScript Hello World</a>
+						<div class="card border-success mb-3" style="max-width: 18rem;">
+							<div class="card-header">Message</div>
+							<div class="card-body text-success">
+							  <h5 class="card-title">JavaScript</h5>
+							  <button class="btn btn-success" onclick="displayMessage()">JavaScript Hello World</button>
+							  <p>Using alert(), console.log()</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li>Section 2: Fundamentals
+				<ul>
+					<li><a href="#">JavaScript</a></li>
+				</ul>
+			</li>
+			<li>Section 3: Operators
+				<ul>
+					<li><a href="./Section3/Calculator.html">Calculator</a>
+						<table>
+							<form action="">
+								<div class="card border-success mb-3" style="max-width: 18rem;">
+									<div class="card-header">Calculator</div>
+									<div class="card-body text-success">
+										<h5 class="card-title">JavaScript</h5>
+										<input type="text" id="box1" placeholder="Type 1st"><br>
+										<input type="text" id="box2" placeholder="Type 2sd"><br>
+										
+										<input class="btn btn-success" type="button" value="+" onclick="add()">
+										<input class="btn btn-success" type="button" value="-" onclick="sub()">
+										<input class="btn btn-success" type="button" value="*" onclick="multi()">
+										<input class="btn btn-success" type="button" value="/" onclick="div()">
+										<input type="text" id="result" placeholder="Result"><br>
+									</div>
+								</div>
+							</form>
+						</table>		
+					</li>
+				</ul>
+			</li>
+			<li>Section 4: Control flow Statements
+				<ul>
+					<li><a href="./Section4/onclick.html">Switch-case</a>
+						<div class="card border-success mb-4" style="max-width: 18rem;">
+							<div class="card-header">Day</div>
+							<div class="card-body text-success">
+								<h5 class="card-title">JavaScript</h5>
+								<button class="btn btn-success" onclick="displayDay()">What day is today?</button>
+								<div id="day"></div>
+							</div>
+						</div>
+
+						<div class="card border-success mb-4" style="max-width: 18rem;">
+							<div class="card-header">Month</div>
+							<div class="card-body text-success">
+								<h5 class="card-title">JavaScript</h5>
+								<button class="btn btn-success" onclick="displayMonth()">What month is this month?</button>
+								<div id="month"></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li>Section 5: Functions
+				<ul>
+					<li><a href="./Section3/Calculator.html">Basic function</a>
+						<div class="card border-success mb-3" style="max-width: 18rem;">
+							<div class="card-header">Time</div>
+							<div class="card-body text-success">
+							  <h5 class="card-title">JavaScript</h5>
+							  <button class="btn btn-success" onclick="displayTime()">What time is it?</button>
+							  <p>Using getHours(), getMinutes(), getSeconds()</p>
+							  <div id="clock"></div>
+							</div>
+						</div>
+						<div class="card border-success mb-4" style="max-width: 18rem;">
+							<div class="card-header">Time</div>
+							<div class="card-body text-success">
+								<h5 class="card-title">JavaScript</h5>
+								<button class="btn btn-success" onclick="showTime()">What time is it?</button>
+								<p>Using toLocaleTimeString()</p>
+								<div id="clock2"></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li>Section 6: Objects & Prototypes
+				<ul>
+					<li><a href="./Section6/todolist.html">Todo List</a>
+						<div class="card border-success mb-3" style="max-width: 30rem;">
+							<div class="card-header">My Todo List</div>
+							<div class="card-body ">
+								<input id="todo-title" type="text">
+								<input id="date-picker" type="date">
+								<button class="btn btn-success" onclick="addToDo()">Add Todo</button>
+								<div id="todo-list"></div>  
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li>Section 7: Classes
+				<ul>
+					<li><a href="#">JavaScript</a></li>
+				</ul>
+			</li>
+			<li>Section 8: Advances Functions
+				<ul>
+					<li><a href="#">JavaScript</a></li>
+				</ul>
+			</li>
+			<li>Section 9: Promises & Async/Await
+				<ul>
+					<li><a href="#">JavaScript</a></li>
+				</ul>
+			</li>
+			<li>Section 10: Iterators & Generators
+				<ul>
+					<li><a href="#">JavaScript</a></li>
+				</ul>
+			</li>
+			<li>Section 11: Modules
+				<ul>
+					<li><a href="#">JavaScript</a></li>
+				</ul>
+			</li>
+
+			<li>Section 11: Symbol
+				<ul>
+					<li><a href="#">JavaScript</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		
+
+	</div> <!--end div content-->
+	<div id="footer">
+		<p>Họ và tên: Dương Thị Keo Da</p>
+		<p>Email: dab1706678@gmail.com</p>
+	</div> <!--end div footer-->
+</div> <!--end div wrap-->
+<!-- ********************************************************************************** -->
+<script>
+		function displayMessage(){
+			alert("JavaScript Hello World!")
+		}
+/****************************************************************************************/	
+		function add(){
+            let box1 = document.getElementById("box1").value;
+            let box2 = document.getElementById("box2").value;
+            let sum = Number(box1) + Number(box2);
+            document.getElementById("result").value = sum;
+            
+        }
+        function sub() {
+            let box1 = document.getElementById("box1").value;
+            let box2 = document.getElementById("box2").value;
+            let sub = Number(box1) - Number(box2);
+            document.getElementById("result").value = sub;
+        }
+        function multi() {
+            let box1 = document.getElementById("box1").value;
+            let box2 = document.getElementById("box2").value;
+            let multi = Number(box1) * Number(box2);
+            document.getElementById("result").value = multi;
+        }
+        function div(){
+            let box1 = document.getElementById("box1").value;
+            let box2 = document.getElementById("box2").value;
+            let div = Number(box1) / Number(box2);
+            document.getElementById("result").value = div;
+
+        }
+/******************************************************************************************/
+		function displayDay() {
+            let day = new Date();
+            switch (day.getDay()) {
+                case 0:
+                    document.getElementById("day").innerHTML = "Today is sunday";
+                    break;
+                case 1:
+                    document.getElementById("day").innerHTML = "Today is monday";
+                    break;
+                case 2:
+                    document.getElementById("day").innerHTML = "Today is Tuesday";
+                    break;
+                case 3:
+                    document.getElementById("day").innerHTML = "Today is wednesday";
+                    break;
+                case 4:
+                    document.getElementById("day").innerHTML = "Today is thursday";
+                    break;
+                case 5:
+                    document.getElementById("day").innerHTML = "Today is Friday";
+                    break;
+                case 6:
+                    document.getElementById("day").innerHTML = "Today is Saturday";
+                    break;
+                default:
+                    break;
+            }     
+        }
+/*******************************************************************************************/
+		function displayMonth() {
+            let month = new Date();
+            switch (month.getMonth()) {
+                case 0:
+                    document.getElementById("month").innerHTML = "This month is January";
+                    break;
+                case 1:
+                    document.getElementById("month").innerHTML = "This month is February";
+                    break;
+                case 2:
+                    document.getElementById("month").innerHTML = "This month is March";
+                    break;
+                case 3:
+                    document.getElementById("month").innerHTML = "This month is April";
+                    break;
+                case 4:
+                    document.getElementById("month").innerHTML = "This month is May";
+                    break;
+                case 5:
+                    document.getElementById("month").innerHTML = "This month is June";
+                    break;
+                case 6:
+                    document.getElementById("month").innerHTML = "This month is July";
+                    break;
+                case 7:
+                    document.getElementById("month").innerHTML = "This month is August";
+                    break;
+                case 8:
+                    document.getElementById("month").innerHTML = "This month is September";
+                    break;
+                case 9:
+                    document.getElementById("month").innerHTML = "This month is October";
+                    break;
+                case 10:
+                    document.getElementById("month").innerHTML = "This month is November";
+                    break;
+                case 11:
+                    document.getElementById("month").innerHTML = "This month is December";
+                    break;
+                default:
+                    break;
+            }
+        }
+/*******************************************************************************************/
+		function displayTime() {
+            let date = new Date();
+            let hours = date.getHours();
+            let minute = date.getMinutes();
+            let second = date.getSeconds();
+            // instead of like 9:3:53, it becom 09:03:53
+            hours = (hours < 10) ? "0" + hours : hours;
+            minute = (minute < 10) ? "0" + minute : minute;
+            second = (second < 10) ? "0" + second : second;
+
+            let time = hours + ":" + minute + ":" + second;
+            document.getElementById("clock").innerHTML = time;
+            let t = setTimeout(function(){ displayTime() }, 1000);
+            // you can also using the following statement
+            // let tt = setTimeout(displayTime, 1000);
+        }
+/*************************************************************************************/
+		function showTime() {
+            let dateTime= new Date();
+            let time2 = dateTime.toLocaleTimeString(); // returns the current local time
+            document.getElementById("clock2").innerHTML = time2;
+            let tt = setTimeout(function(){ showTime() }, 1000);
+        }
+/************************************************************************************/
+let todos = [
+            {
+                title: 'Get up',
+                dueDate: '2021-10-04',
+                id: 'id1'
+            },
+            {
+                title: 'Wash my face',
+                dueDate: '2021-02-10',
+                id: 'id2'
+            },
+            {
+                title: 'Brush my teeth',
+                dueDate: '2020-12-04',
+                id: 'id3'
+            }
+        ]
+        render();
+        function deleteTodo(event) {
+            const deleteButton = event.target;
+            const idToDelete = deleteButton.id;
+            // filter tựa tựa forEach
+            todos = todos.filter(function(todo){
+                if(todo.id === idToDelete) {
+                    return false;                    
+                } else {
+                    return true;
+                }
+            });
+            render();
+        }
+        function addToDo() {
+            const textbox = document.getElementById("todo-title");
+            const title = textbox.value;
+            const datePicker = document.getElementById('date-picker');
+            const dueDate = datePicker.value;
+            const id = '' + new Date().getTime();
+            todos.push({title: title, dueDate: dueDate, id: id});
+            render();
+        }
+        function render() {
+            // reset our list
+            document.getElementById('todo-list').innerHTML = '';
+            todos.forEach(function (todo) {
+                let element = document.createElement('div');
+                element.innerText = todo.title + ' ' + todo.dueDate;
+                const deleteButton = document.createElement('button');
+                deleteButton.innerText = 'Delete';
+                deleteButton.style = 'margin-left: 12px';
+                deleteButton.onclick = deleteTodo;
+                deleteButton.id = todo.id;
+                element.appendChild(deleteButton);
+                const todoList = document.getElementById('todo-list');
+                todoList.appendChild(element);
+            });
+        }
+</script>
+</body>
+</html>
